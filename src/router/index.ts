@@ -5,11 +5,11 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: "/",
+      path: '/',
       component: HomeView,
-      name: "HomeView",
-      meta: { title: "首页" }
-    }
+      name: 'HomeView',
+      meta: { title: '首页' },
+    },
   ],
 })
 
