@@ -196,13 +196,14 @@ const ShowMoreStory = ref(false)
 
 <style scoped lang="scss">
 .leaf {
-  width: 100vw;
+  width: 100%;
   position: absolute;
   > * {
     width: 100%;
     height: 222px;
     position: absolute;
     background-repeat: round;
+    background-size: cover;
   }
   .left {
     background-image: url('@/assets/leftleaf.png');
