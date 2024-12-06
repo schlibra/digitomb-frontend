@@ -112,7 +112,23 @@ const ShowMoreStory = ref(false)
         </p>
       </div>
     </div>
-    <div class="whisper" />
+<!--    <div class="whisper" />-->
+    <div class="leaveMessages">
+      <p class="title">留下你对他的思念</p>
+    </div>
+    <div class="write-message">
+      <el-form>
+<!--        <el-form-item label="姓名">-->
+<!--          <el-input placeholder="请输入您的姓名" />-->
+<!--        </el-form-item>-->
+<!--        <el-form-item label="留言">-->
+<!--          <el-input placeholder="请输入你的留言" />-->
+<!--        </el-form-item>-->
+        <div class="confirm">
+          <span>文字留言</span>
+        </div>
+      </el-form>
+    </div>
     <div class="friend-said">
       <div class="title">
         <img src="@/assets/friend_left.png" alt="friend left" />
@@ -175,22 +191,7 @@ const ShowMoreStory = ref(false)
         <el-link type="primary" @click="void 0">显示更多</el-link>
       </p>
     </div>
-    <div class="leaveMessages">
-      <p class="title">留下你对他的思念</p>
-    </div>
-    <div class="write-message">
-      <el-form>
-        <el-form-item label="姓名">
-          <el-input placeholder="请输入您的姓名" />
-        </el-form-item>
-        <el-form-item label="留言">
-          <el-input placeholder="请输入你的留言" />
-        </el-form-item>
-        <div class="confirm">
-          <span>文字留言</span>
-        </div>
-      </el-form>
-    </div>
+
   </el-main>
 </template>
 
@@ -315,7 +316,7 @@ const ShowMoreStory = ref(false)
       margin-left: 16px;
       .content {
         text-indent: 2em;
-        font-size: 12px;
+        font-size: 14px;
       }
       .read-more {
         text-align: right;
@@ -446,15 +447,17 @@ const ShowMoreStory = ref(false)
   }
   .write-message {
     width: 91%;
-    height: 150px;
+    height: 100px;
     background-image: url('@/assets/name_and_msg_background.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 25px 30px 0;
+    margin-top: 8px;
     .confirm {
-      text-align: right;
-      padding-right: 20px;
+      text-align: center;
+      padding-top: 24px;
       span {
+        padding: 15px;
         color: #423f3f;
         border-radius: 4px;
         background-image: url('@/assets/msg_confirm.png');
